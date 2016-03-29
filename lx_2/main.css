@@ -1,0 +1,45 @@
+﻿body {
+	width: 100%;
+}
+
+img {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	float: left;
+	z-index: 1;	
+}
+
+.container {
+	background-color: #FFF;
+	padding: 2%;
+	width: 70%;
+	margin: 0 auto;
+	clear: both;
+}
+
+div.header, div.footer {
+	color: white;
+	padding: 1em;
+	background-color: gray;
+	clear: left;
+}
+
+h1.header {
+	padding: 0;
+	margin: 0;
+}
+
+div.left {
+	float: left;
+	width: 35%;
+	padding: 1em;
+	margin: 0;
+}
+
+div.content {
+	width: 35%;
+	margin-left: 50%;
+	border-left: 1px solid red;
+	padding: 1em;
+}
