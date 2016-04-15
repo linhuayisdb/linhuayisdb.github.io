@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery</title>
+	
+
+	
+	<script src="jquery.js"></script>
+	
+	<script>
+		$(document).ready(function(){
+			/*$("h2").siblings("p").css({"color":"red","border":"2px solid red"});*/
+			/*$("h2").nextUntil("p").css({"color":"red","border":"2px solid red"});*/
+			
+			/*$("div h3").first().css({"color":"red","border":"2px solid red"});*/
+			
+			$("#btn1").click(function(){
+				$('#test').load('hello.html');
+			});
+		});
+	</script>
+
+</head>
+
+<body class="siblings">
+<!-- 	<div>
+		<p>p</p>
+		<span>span</span>
+		<h2>h2</h2>
+		<h3>h3</h3>
+		<p>p</p>
+	</div> -->
+	
+	<div>
+		<h3 id="test">请点击下面的按钮，通过 jQuery AJAX 改变这段文本。</h3>
+		<button id="btn1" type="button">获得外部的内容</button>
+
+	</div>
+
+</body>
+
+</html>

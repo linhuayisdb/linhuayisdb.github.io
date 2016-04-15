@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		.top-nav
+        {
+            font-size: 14px;
+            font-weight: bold;
+            list-style: none;
+        }
+        .top-nav li
+        {
+            float: left;
+            margin-right: 1px;
+        }
+        .top-nav li a
+        {
+            line-height: 34px;
+            text-decoration: none;
+            background: #3f240e;
+            color: #fff;
+            display: block;
+            width: 80px;
+            text-align: center;
+        }
+		 .top-nav ul
+        {
+            list-style: none;
+            display: none;
+            padding: 0;
+            position: absolute;
+			height:0px;
+			overflow:hidden;
+        }
+        .top-nav li a:hover
+        {
+            background:url('images/slide-pannel_14.png') 0 0 repeat-x;
+			color:#3f240e;
+        }
+		.note 
+		{
+			color:#3f240e;
+			display:block;
+			background:url('images/slide-pannel_14.png') 0 0 repeat-x;
+		}
+		.corner {
+			display:block;
+			height:11px;
+			background:url("images/bird.png") 31px 0 no-repeat;
+			
+		}
+	</style>
+
+	<script type="text/javascript">
+		window.onload=function(){
+			var lis=document.getElementsByTagName)("li");
+			for(var i=0;i<lis.length;i++){
+				lis[i].onmouseover=function(){
+					var u=this.getElementsByTagName("ul")[0];
+					if(u !=undefined){
+						u.style.display="block";
+						AddH(u. id);
+					}
+					
+				}
+				
+				lis[0].onmouseoleave=function(){
+					var u=this.getElementsByTagName("ul")[0];
+					if(u !=undefined){
+						AddH(u. id);
+					}
+				}
+			}
+		}
+		function AddH(id) {
+			var ulList=document.getElementById(id);
+			var h=ulList.offsetHeight;
+			h+=1;
+			if(h<=42){
+				ulList.style.height=h+"px";
+				setTimeout("AddH('"+ id +"')",10);
+			}
+			else {
+				return;
+			}
+		}
+		function SubH(id) {
+			//setTimeout();
+		}
+	</script>
+</head>
+
+<body>
+		<ul class="top-nav">
+			<li><a href="#"><span class="note">首页</span></a></li>
+			<li><a href="#">课程大厅</a>
+				<ul id="menuUL">
+					<span class="corner"></span>
+					<li><a href="#">android</a></li>
+					<li><a href="#">ios</a></li>
+					<li><a href="#">winphone</a></li>
+				</ul>
+			</li>
+			<li><a href="#">学习中心</a>
+				<ul id="menuUL">
+					<span class="corner"></span>
+					<li><a href="#">android</a></li>
+					<li><a href="#">ios</a></li>
+					<li><a href="#">winphone</a></li>
+				</ul>
+			</li>
+			<li><a href="#">关于我们</a></li>
+		</ul>
+
+</body>
+</html>

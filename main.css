@@ -1,0 +1,132 @@
+﻿* {
+	padding:0;
+	margin:0;
+	border:0;
+}
+
+
+body {
+		width:1400;
+		margin:12px 260px 0px 260px;
+		font-family:Verdana, Arial, '宋体';
+		font-size:14px;
+		background-color:#FFF5EE;
+}
+
+.mainHeader {
+	margin:12px 6px 0 6px;
+}
+
+.mainHeader img{
+	float:left;
+	clear:both;
+}
+
+.guide {
+	float:left;
+	clear:both;
+	width:450px;
+	height:40px;
+	background-color:#666;
+	margin:12px 0 0 0;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.guide ul {
+	list-style:none;
+	margin:0 auto;
+}
+
+.guide  ul li {
+	float: left;
+	display: inline;	
+}
+
+.guide a:link, .guide a:visited {
+	color: #FFF;
+	display: inline-block;
+	padding: 10px 25px;
+	height: 20px;
+	text-decoration:none;
+}
+
+.guide ul .active a:link, .guide ul .active a:hover, .guide a:hover, .guide a:active {
+	background-color: #CF5C3F;
+	text-shadow: none;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.leftBar {
+	float:left;
+	clear:both;
+	width:140px;
+	height:auto;
+	margin:12px 0 0 0;
+	background-color:#FAEBD7;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.leftBar ul {
+	list-style:none;
+	margin:15px  0 15px 6px;
+}
+
+.leftBar ul li {
+	display: block;
+	padding: 6px 0;
+	height: 20px;
+}
+
+.leftBar a:link, .leftBar a:visited {
+	color: #FFF;
+	display:block;
+	height: 20px;
+	text-decoration:none;
+}
+
+.leftBar ul .first a:link, .leftBar ul .first a:hover, .leftBar a:hover, .leftBar a:active {
+	background-color: #CF5C3F;
+	text-shadow: none;
+	padding-left:6px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.mainContent {
+	float:left;
+	width:1100px;
+	background-color:white;
+	margin-left:12px;
+	margin-top:15px;
+	background-image: url(img/bg_1.jpg);
+}
+
+.mainContent p {
+	text-indent:2em;
+}
+
+.footer {
+	float:left;
+	clear:both;
+	width:100%;
+	margin-top:15px;
+	padding:15px 12px;
+	background-color:#666;
+}
+
+@media only screen and (min-width:150px) and (max-width:960px) {
+	body {
+		width:90%;
+	}
+	
+	.mainContent {
+		width:70%;
+	}
+}

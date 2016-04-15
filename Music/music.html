@@ -1,28 +1,34 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>æ— æ ‡é¢˜æ–‡æ¡£</title>
+<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){			
+			$(".flip").click(function(){
+				$(".panel").slideToggle("slow");
+			});
+		});
+	</script>
+
+	<style type="text/css">
+		div.panel,.flip {
+			margin:0px;
+			padding:5px;
+			text-align:center;
+			background-color:yellow;
+			border:solid 1px red;
+		}
+		div.panel {
+			height:120px;
+		}
+	</style>
 </head>
 
 <body>
-
-<!--<embed height="100" width="200" src="file/ç¾¤æ˜Ÿ - å¯‚é™ä¹‹å£°.mp3"></embed>-->
-
-  <audio autoplay="autoplay">
-    <source src="file/ç¾¤æ˜Ÿ - å¯‚é™ä¹‹å£°.mp3" type="audio/mp3" />
-  </audio>
-  
-<div style="text-align:center;"
-  <button onclick="playPause()">æ’­æ”¾/æš‚åœ
-
-  <!--<p><a href="file/ç¾¤æ˜Ÿ - å¯‚é™ä¹‹å£°.mp3">å¯‚é™ä¹‹å£°</a></p>
-  <p><a href="file/Various Artists - The sound of silence.mp3" >piano</a></p>
-  <script type="text/javascript"
-  src="http://mediaplayer.yahoo.com.js"></script>-->
-  
-  
-  <!--<bgsound src="file/Various Artists - The sound of silence.mp3" loop="-1" />-->
-
+	<p class="flip">Çëµã»÷ÕâÀï</p>
+	<div class="panel">
+		<p>W3School - ÁìÏÈµÄ Web ¼¼Êõ½Ì³ÌÕ¾µã</p>
+		<p>ÔÚ W3School£¬Äã¿ÉÒÔÕÒµ½ÄãËùĞèÒªµÄËùÓĞÍøÕ¾½¨Éè½Ì³Ì¡£</p>
+	</div>
 </body>
-</html>
+</html> 

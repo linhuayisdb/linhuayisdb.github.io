@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>变幻菜单</title>
+	
+	<style type="text/css">
+		 * {
+			margin:0;
+			padding:0;
+		}
+		
+		.top-nav {
+			font-size:none;
+			font-weight:bold;
+			list-style:none;
+			border-bottom:8px solid #DC3E1B;
+			overflow:auto;
+			
+			width:70%;
+			margin:20px auto;
+		}
+		
+		.top-nav li {
+			float:left;
+			margin-right:1px;
+			position:relative;
+			background-color:yellow;
+		}
+		
+		.top-nav li a {
+			line-height:20px;
+			text-decoration:none;
+			background-color:#DDD;
+			color:#666666;
+			display:block;
+			
+			width:90px;
+			text-align:center;
+		} 
+		
+		.top-nav li a span {
+			display:none;
+			width:90px;
+			position:absolute;
+			left:0px;
+			top:0px;
+		}
+		
+		.top-nav li a:hover span {
+			display:block;
+			background-color:#DC3E1B;
+		
+<!-- 		.top-nav li a:hover {
+			margin-top:20px;
+		} -->
+	</style>
+</head>
+
+<body>
+	<ul class="top-nav">
+		<li><a href="#">首页<span>home</span></a></li>
+		<li><a href="#">课程大厅<span>Course</span></a></li>
+		<li><a href="#">学习中心<span>Learn</span></a></li>
+		<li><a href="#">关于我们<span>About</span></a></li>
+	</ul>
+</body>
+</html>

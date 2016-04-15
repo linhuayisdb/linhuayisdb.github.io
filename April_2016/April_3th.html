@@ -1,0 +1,109 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta name="author" content="PP" >
+	
+	<title>2016-4-3</title>
+	
+<script type="text/javascript">
+		function starTime()
+		{
+			var today=new Date();
+			var h=today.getHours();
+			var m=today.getMinutes();
+			var s=today.getSeconds();
+			//add a zero in ftont of numbers<10
+			m=checkTime(m);
+			s=checkTime(s);
+			document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+			t=setTimeout('starTime()',500);
+		}
+		
+		function checkTime(i)
+		{
+			if(i<10)
+			{
+				i="0"+i;
+			}
+			return i;
+		}
+		
+		function newDoc()
+		{
+			window.location.assign("http://www.baidu.com");
+		}
+		
+		function myBack()
+		{
+			window.history.back();
+		}
+		
+		function myForward()
+		{
+			window.history.forward();
+		}
+		
+		function myMsg()
+		{
+			alert("hhhhhhh")
+			var t=setTimeout(myMsg(),500) 
+		}
+		
+	</script>
+</head>
+
+<body onload="starTime()">
+
+<!-- 	<script type="text/javascript">
+		//var txt="Hello World !";
+		//document.write(txt.length); 
+		
+		//var num="2";
+		//document.write("<p>2" + num.sup() + "</p>");
+		
+	//indexOf：检查字符串中某一元素第一次出现的位置,负数代表没有出现
+		//var str="Hello world !";
+		//document.write(str.indexOf("Hello") +"<br />");
+		//document.write(str.indexOf("hello") +"<br />");
+		//document.write(str.indexOf("or") +"<br />");
+
+	//match：查找字符串中某一字符串，并返回。
+		//document.write(str.match("Hello") + "<br />");
+		//document.write(str.match("o") + "<br />");
+		//document.write(str.match("or") + "<br />");
+		//document.write(str.match("World") + "<br />");
+		
+	//replace：代替字符串中的某一字符串。innerHTML?。
+		//var str="visit Microsoft";
+		//document.write(str.replace(/Microsoft/,"W3School"));
+		
+	//Date
+		//document.write(Date());
+	</script>
+ -->
+ 
+<!--  <div id="txt"></div>
+ 
+ <input type="button" value="baidu"  onclick="newDoc()">
+ <input type="button" value="back" onclick="myBack()">
+ <input type="button" value="forward" onclick="myForward()">
+ <input type="button" value="hhhh" onclick="myMsg()"> -->
+ <div id="div1"> 
+	<p id="p1">hedfaldfjladkfdla</p>
+	<p id="p2">12312313131313113</p>
+ </div>
+
+ <script>
+var parent=document.getElementById("div1");
+var child=document.getElementById("p1");
+var para=document.createElement("p");
+var node=document.createTextNode("This is new.");
+para.appendChild(node);
+parent.replaceChild(para,child);
+ </script>
+ 
+</body>
+</html>

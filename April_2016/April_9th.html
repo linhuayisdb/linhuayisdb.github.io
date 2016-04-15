@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8" />
+	
+	<script type="text/javascript" src="jQuery.js"></script>
+	<script type="text/javascript">
+/*		$(document).ready(function(){
+			$("p").click(function(){
+				$(this).hide();
+			});
+		});*/
+		
+		$(document).ready(function(){
+/*			$("#hide").click(function(){
+				$("p").hide();
+			});
+			$("#show").click(function(){
+				$("p").show();
+			});*/
+			
+/*			$(".ex1 .hide").click(function(){
+				$("p.p1").hide("slow");
+			});
+			$(".ex1 .show").click(function(){
+				$("p.p1").show("slow");
+			});*/
+			
+			$("button").click(function(){
+				$("div").animate({
+					left:'250px',
+					top:'250px',
+				},"slow");
+			});
+		});
+	</script>
+	
+	<style type="text/css">
+		
+	</style>
+</head>
+
+<body>
+<!-- <p>dafdafafafaffadaa</p>
+<p>dafdafafafaffadaa</p>
+<p>dafdafafafaffadaa</p>
+<p>dafdafafafaffadaa</p>
+<p>dafdafafafaffadaa</p>
+<p>dafdafafafaffadaa</p>
+<button type="button" id="hide"> Hide me</button>
+<br>
+<br>
+<button type="button" id="show"> Show me</button> -->
+
+<!-- <h3>中国办事处</h3>
+<div class="ex1">
+	<button class="hide" type="button">hide</button>
+	<button class="show" type="button">show</button>
+	<p class="p1">connectioner:PP</p>
+	<p class="p1">Add:Guangzhou</p>
+</div>
+
+<div class="ex">
+	<button class="hide" type="button">hide</button>
+	<button class="show" type="button">show</button>
+	<p>connectioner:PP</p>
+	<p>Add:Guangzhou</p>
+</div> -->
+
+<button type="button">开始动画</button>
+<div class="flash" style="background-color:blue;height:100px;width:100px;position:absolute;">
+	
+</div>
+</body>
+
+</html>

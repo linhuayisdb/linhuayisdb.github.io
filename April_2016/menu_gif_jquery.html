@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		.top-nav
+        {
+            font-size: 14px;
+            font-weight: bold;
+            list-style: none;
+        }
+        .top-nav li
+        {
+            float: left;
+            margin-right: 1px;
+        }
+        .top-nav li a
+        {
+            line-height: 34px;
+            text-decoration: none;
+            background: #3f240e;
+            color: #fff;
+            display: block;
+            width: 80px;
+            text-align: center;
+        }
+		 .top-nav ul
+        {
+            list-style: none;
+            display: none;
+            padding: 0;
+            position: absolute;
+        }
+        .top-nav li a:hover
+        {
+            background:url('images/slide-pannel_14.png') 0 0 repeat-x;
+			color:#3f240e;
+        }
+		.note 
+		{
+			color:#3f240e;
+			display:block;
+			background:url('images/slide-pannel_14.png') 0 0 repeat-x;
+		}
+		.corner {
+			display:block;
+			height:11px;
+			background:url("images/bird.png") 31px 0 no-repeat;
+			
+		}
+	</style>
+	
+	<script src="jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".top-nav li").click(function(){
+				$(this).find("ul").slideToggle("1000");
+				$(this).siblings().find("ul").css("display","none");
+			});
+		});
+	</script>
+</head>
+
+<body>
+		<ul class="top-nav">
+			<li><a href="#"><span class="note">首页</span></a></li>
+			<li><a href="#">课程大厅</a>
+				<ul>
+					<span class="corner"></span>
+					<li><a href="#">android</a></li>
+					<li><a href="#">ios</a></li>
+					<li><a href="#">winphone</a></li>
+				</ul>
+			</li>
+			<li><a href="#">学习中心</a>
+				<ul>
+					<span class="corner"></span>
+					<li><a href="#">android</a></li>
+					<li><a href="#">ios</a></li>
+					<li><a href="#">winphone</a></li>
+				</ul>
+			</li>
+			<li><a href="#">关于我们</a></li>
+		</ul>
+
+</body>
+</html>

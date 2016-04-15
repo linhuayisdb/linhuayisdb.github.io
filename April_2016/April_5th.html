@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<title>jQuery</title>
+	
+	<script src="jQuery.js" type="text/javascript"></script>
+	<script>
+		$(document).ready(function(){
+			$("#show").click(function(){
+				$("#div1").fadeIn();
+				$("#div2").fadeIn("slow");
+				$("#div3").fadeIn(1500);
+			});
+			$("#hide").click(function(){
+				$("#div1").fadeOut();
+				$("#div2").fadeOut("slow");
+				$("#div3").fadeOut(1500);
+			});
+			$("#all").click(function(){
+				$("#div1").fadeToggle();
+				$("#div2").fadeToggle("slow");
+				$("#div3").fadeToggle(1500);
+			});
+		});
+	</script>
+	
+<!-- 	<style type="text/css">
+		div.panel,.flip {
+			margin:0px;
+			padding:5px;
+			text-align:center;
+			background-color:yellow;
+			border:solid 1px red;
+		}
+		div.panel {
+			height:120px;
+			display:none;
+		}
+	</style> -->
+
+</head>
+
+<body>
+	<P>演示带有不同参数的fadeIn()方法。</P>
+	<button id="show">点击这里，使三个矩形淡入</button>
+	<br>
+	<button id="hide">点击这里，使三个矩形淡出</button>
+	<br>	
+	<button id="all">点击这里，使三个矩形淡出淡入</button>	
+	<br><br>
+	<div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div>
+	<br><br>
+	<div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div>
+	<br><br>
+	<div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+	<br><br>
+	
+</body>
+</html>

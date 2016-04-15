@@ -1,0 +1,141 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+	<title>review</title>
+	
+	<script type="text/javascript">
+		function changeLink()
+		{
+			
+			if(document.getElementById("myAnchor").href.indexOf("w3school")<0)
+			{
+				document.getElementById("myAnchor").href="http://www.w3school.com.cn";
+				document.getElementById("myAnchor").innerHTML="访问W3c";
+			}
+			else
+			{
+				document.getElementById("myAnchor").href="http://www.baidu .com";
+				document.getElementById("myAnchor").innerHTML="访问baidu";
+			}
+			document.getElementById("myAnchor").target="_blank";
+		}
+		
+		function returnURL() 
+		{
+			document.getElementById("showURL").value=(document.URL);
+		}
+		
+		function createOrder()
+		{
+			coffee=document.forms[0].coffee;
+			text="";
+			for(i=0;i<coffee.length;++i)
+			{
+				if(coffee[i].checked)
+				{
+					text+=coffee[i].value+" ";
+				}
+			}
+			document.getElementById("order").value=text;
+		}
+		
+		function convertToUcase()
+		{
+			document.getElementById("fname").value=document.getElementById("fname").value.toUpperCase()
+			document.getElementById("lname").value=document.getElementById("lname").value.toUpperCase()
+		}
+		
+		function convertToLcase()
+		{
+			document.getElementById("fname").value=document.getElementById("fname").value.toLowerCase()
+			document.getElementById("lname").value=document.getElementById("lname").value.toLowerCase()
+		}
+		
+		function formReset()
+		{
+			document.getElementById("form1").reset()
+		}
+		
+		function validate()
+		{
+			var fname=document.getElementById("fname").value
+			var lname=document.getElementById("lname").value
+			submitOK="true"
+			
+			if(fname.length==0||fname.length>5)
+			{
+				alert("姓不能为空，或超过5个字符")
+				submitOK="false"
+			}
+			
+			if(lname.length==0||lname.length>10)
+			{
+				alert("名字不能为空，或超过10个字符")
+				submitOK="false"
+			}
+			
+			if(submitOK=="false")
+			{
+				return false
+			}
+		}
+		
+		function favBrowser()
+		{
+			var mylist=document.getElementById("myList")
+			document.getElementById("favorite").value=mylist.options[mylist.selectedIndex].text
+		}
+		
+	</script>
+</head>
+
+<body>
+
+<!--  	<a id="myAnchor" href="www.w3school.com.cn">访问百度</a>
+	<input type="button" onclick="changeLink()" value="changeLink">
+	<input type="button" onclick="returnURL()" value="返回当前URL"> 
+	<input id="showURL" type="text" value=""> -->
+	
+<!-- 	<p>你喜欢这样和咖啡</p>
+	<form>
+	<input type="checkbox" name="coffee" value="奶油">加奶油
+	<br/>
+	<input type="checkbox" name="coffee" value="糖块">加糖块
+	<br/>
+	<br/>
+	<input type="button" onclick="createOrder()" value="send order">
+	<input id="order" type="text" size="50">
+	</form> -->
+	
+<!-- 	<form id="form1" action="#" onsubmit="return validate()">
+		名：<input type="text" id="fname" size="20" />
+		<br />
+		<br />
+		姓：<input type="text" id="lname" size="20" />
+		<br />
+		<br />
+		<input type="checkbox" onclick="if(this.checked)
+		{convertToUcase()}
+		else {convertToLcase()}
+		" />
+		<input type="button" onclick="formReset()" value="重置">
+		
+		<input type="submit" value="提交" />
+		
+	</form> 
+	 -->
+	
+	<form>
+		请选择您喜欢的浏览器：
+		<select id="myList" onchange="favBrowser()">
+			<option>Internet Explorer</option>
+			<option>Netscape</option>
+			<option>Opera</option>
+		</select>
+		
+		<p>您喜欢的浏览器是：<input type="text" id="favorite" size="20"></p>
+	</form>
+	
+</body>
+</html>
