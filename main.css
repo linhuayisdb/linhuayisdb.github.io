@@ -121,6 +121,46 @@ body {
 	background-color:#666;
 }
 
+.topnav {
+	width:40px;
+	position:fixed;
+	right:30px;
+	top:700px;
+}
+
+.topnav ul {
+	list-style:none;	
+	float:left;
+	position:relative;
+}
+
+.topnav ul li {
+	margin-top:5px;
+}
+.topnav ul li a {
+	display:block;
+	
+	height:20px;
+	text-align:center;
+	text-decoration:none;
+	background:url('img/slide-pannel_14.png') 0 0 repeat-x;
+}
+
+.topnav ul li ul {
+	list-style:none;	
+	float:right;
+	width:70px;
+	display:none;
+	position:absolute;
+	top:0px;
+	right:45px;
+	
+}
+
+.topnav #share:hover ul {
+	display:block;
+	
+}
 @media only screen and (min-width:150px) and (max-width:960px) {
 	body {
 		width:90%;

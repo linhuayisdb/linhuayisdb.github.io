@@ -1,0 +1,47 @@
+﻿.navlist {
+	position:absolute;
+	top:10px;
+}
+
+a {
+	text-decoration:none;
+	color:white;
+}
+
+.navlist a {
+	margin-left:60px;
+	color:#666;
+}
+
+.expend {
+	height:130px;
+	background-color:#333d4d;
+	overflow:hidden;
+	position:relative;
+	top:30px;
+	width:100%;
+}
+
+.expdiv {
+	height:0px;
+	width:500%;
+}
+
+.expdiv-list {
+	width:20%;
+	text-align:center;
+	float:left;
+	line-height:110px;
+	color:white;	
+}
+
+.expend .close-btn {
+	width:120px;
+	height:20px;
+	background:url(images/broswer_home.png) no-repeat -13px -117px;
+	position:absolute;
+	left:50%;
+	bottom:-2px;
+	margin-left:-60px;
+	cursor:pointer;
+}
